@@ -47,20 +47,33 @@
     z-index: 0;
     width: 100%;
     height:100%;
+    background-size: 264px;
+    background-repeat:no-repeat;
 }
 .products__background--1{
     right: 90px;
     top: 100px;
     background-image: url(../img/bg-products-1.png);
-    background-size: 264px;
-    background-repeat:no-repeat;
     background-position: right top;
 }
 .products__background--2{
     left: 90px;
     bottom: -25px;
     background-image: url(../img/bg-products-2.png);
-    background-size: 264px;
-    background-repeat:no-repeat;
     background-position: left bottom;
+}
+@media (max-width: 992px){
+    .products__background--1{
+        right: 40px;
+        top: 70px;
+    }
+    .products__background--2{
+        left: 10px;
+        bottom: -10px;
+    }
+}
+@media (max-width: 768px){
+    .products__background{
+        background-size: 190px;
+    }
 }
