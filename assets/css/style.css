@@ -1,0 +1,33 @@
+/* Section: Productos */
+.product{
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+    background-repeat:no-repeat;
+    background-size:contain;
+    box-shadow: -1px 3px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #F2F2F2;
+}
+.product__hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+.product:hover > .product__hover {
+    opacity: 1;
+    visibility: visible;
+}
+.products__group--1{
+    margin-top: 65px;
+}
+.products__group--3{
+    margin-top: 130px;
+}
+.products__group--4{
+    margin-top: 300px;
+}
