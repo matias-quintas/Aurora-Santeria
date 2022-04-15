@@ -23,11 +23,22 @@
     visibility: visible;
 }
 .products__group--1{
-    margin-top: 65px;
+    margin-top: 72px;
 }
 .products__group--3{
-    margin-top: 130px;
+    margin-top: 160px;
 }
 .products__group--4{
-    margin-top: 300px;
+    margin-top: 324px;
+}
+@media (max-width: 575px) {
+    .products__group--1{
+        margin-top: 0;
+    }
+    .products__group--3{
+        margin-top: 0;
+    }
+    .products__group--4{
+        margin-top: 0;
+    } 
 }
