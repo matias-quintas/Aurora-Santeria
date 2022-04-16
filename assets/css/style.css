@@ -17,6 +17,7 @@
     right: 0;
     visibility: hidden;
     opacity: 0;
+    border-radius: 8px;
 }
 .product:hover > .product__hover {
     opacity: 1;
