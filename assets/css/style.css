@@ -1,3 +1,28 @@
+/* General */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    font-size: 1.6875rem;
+    line-height: 1.6875rem;
+    letter-spacing: 0.4px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight: 700;
+    color: #616161;
+}
+p{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.4px;
+    color: #434242;
+}
 /* Section: Productos */
 .product{
     position: relative;
