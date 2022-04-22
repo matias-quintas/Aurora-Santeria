@@ -2,7 +2,7 @@
 .product{
     position: relative;
     width: 100%;
-    padding-top: 100%;
+    padding-top: 106.06%;
     background-repeat:no-repeat;
     background-size:contain;
     box-shadow: -1px 3px 6px rgba(0, 0, 0, 0.1);
@@ -48,33 +48,35 @@
     z-index: 0;
     width: 100%;
     height:100%;
-    background-size: 264px;
+    background-size: 25%;
     background-repeat:no-repeat;
 }
 .products__background--1{
-    right: 90px;
+    right: 8.75%;
     top: 100px;
     background-image: url(../img/bg-products-1.png);
     background-position: right top;
 }
 .products__background--2{
-    left: 90px;
-    bottom: -25px;
+    left: 5%;
+    bottom: -15px;
     background-image: url(../img/bg-products-2.png);
     background-position: left bottom;
 }
-@media (max-width: 992px){
-    .products__background--1{
-        right: 40px;
-        top: 70px;
-    }
-    .products__background--2{
-        left: 10px;
-        bottom: -10px;
-    }
-}
+
 @media (max-width: 768px){
     .products__background{
         background-size: 190px;
     }
+}
+@media (min-width: 576px) and (max-width: 991px){
+    .products__group--3{
+        margin-top: 64px;
+    }
+}
+@media (min-width: 992px){
+/* Esta clase deberia cambiarse a "m-page" o algo similar, y usarla en todas las section... */
+.products{
+    margin: 0 5.55%;
+}
 }
