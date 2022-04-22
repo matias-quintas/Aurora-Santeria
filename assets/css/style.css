@@ -72,6 +72,12 @@
         left: 0;
         bottom: -75px;
     }
+    .btn-mas{
+        color: #719E5B;
+        padding: 10px 12px;
+        background: #D4DFBD;
+        border-radius: 8px;
+    }
 }
 @media (min-width: 576px) and (max-width: 991px){
     .products__group--3{
