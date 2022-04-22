@@ -52,26 +52,36 @@
     background-repeat:no-repeat;
 }
 .products__background--1{
-    right: 8.75%;
-    top: 100px;
+    right: 5%;
+    top: 110px;
     background-image: url(../img/bg-products-1.png);
     background-position: right top;
 }
 .products__background--2{
-    left: 5%;
-    bottom: -15px;
+    left: 4%;
+    bottom: -10px;
     background-image: url(../img/bg-products-2.png);
     background-position: left bottom;
 }
 
-@media (max-width: 768px){
+@media (max-width: 575px){
     .products__background{
         background-size: 190px;
+    }
+    .products__background--2{
+        left: 0;
+        bottom: -75px;
     }
 }
 @media (min-width: 576px) and (max-width: 991px){
     .products__group--3{
         margin-top: 64px;
+    }
+    .products__background{
+        background-size: 35%;
+    }
+    .products__background--1{
+        top: 0;
     }
 }
 @media (min-width: 992px){
