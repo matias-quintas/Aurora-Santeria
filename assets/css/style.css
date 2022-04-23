@@ -91,6 +91,7 @@ p{
         bottom: -75px;
     }
     .btn-mas{
+        z-index: 1;
         color: #719E5B;
         padding: 10px 12px;
         background: #D4DFBD;
