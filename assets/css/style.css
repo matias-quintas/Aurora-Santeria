@@ -36,19 +36,10 @@ p{
 }
 .product__hover{
     position: absolute;
-    top: 0;
-    left: 0;
+    width: 100%;
     bottom: 0;
-    right: 0;
-    visibility: hidden;
-    opacity: 0;
-    border-radius: 8px;
+    border-radius: 0 0 8px 8px;
     background-color: #E29E88;
-    transition: ease-in 250ms;
-}
-.product:hover > .product__hover {
-    opacity: 1;
-    visibility: visible;
 }
 .products__group--1{
     margin-top: 72px;
@@ -105,6 +96,11 @@ p{
         background: #D4DFBD;
         border-radius: 8px;
     }
+    .product__hover > h1{
+        font-weight: 500;
+        font-size: 1.125rem;
+        line-height: 1.25rem;
+    }
 }
 @media (min-width: 576px) and (max-width: 991px){
     .products__group--3{
@@ -116,10 +112,29 @@ p{
     .products__background--1{
         top: 0;
     }
+    .product__hover > h1{
+        font-weight: 500;
+        font-size: 1.125rem;
+        line-height: 1.25rem;
+    }
 }
 @media (min-width: 992px){
-/* Esta clase deberia cambiarse a "m-page" o algo similar, y usarla en todas las section... */
-.products{
-    margin: 0 5.55%;
-}
+    /* Esta clase deberia cambiarse a "m-page" o algo similar, y usarla en todas las section... */
+    .products{
+        margin: 0 5.55%;
+    }
+    .product__hover{
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        visibility: hidden;
+        opacity: 0;
+        border-radius: 8px;
+        transition: ease-in 250ms;
+    }
+    .product:hover > .product__hover {
+        opacity: 1;
+        visibility: visible;
+    }
 }
