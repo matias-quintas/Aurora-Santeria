@@ -81,7 +81,11 @@ p{
     background-image: url(../img/bg-products-2.png);
     background-position: left bottom;
 }
-
+.modal-img{
+    width: 100%;
+    max-width: 70vh;
+    border-radius: 8px;
+}
 @media (max-width: 575px){
     .products__background{
         background-size: 190px;
