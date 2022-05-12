@@ -1,413 +1,619 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google Fonts: Poppins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Aurora Santeria</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Aurora Santeria</title>
 </head>
+
 <body>
-    <!-- Section de Productos -->
-    <section class="container-md d-flex justify-content-center">
-        <div class="container products">
-            <div class="d-flex justify-content-center">
-                <div class="text-center col-sm-10 col-lg-6 mx-3">
-                    <h1>Nuestros productos</h1>
-                    <p class="mt-4">En esta sección podes encontrar todas las categorías de productos que ofrecemos en Aurora, de marcas como
-                       <br class="d-none d-sm-block"> Salve Regina, Sagrada Madre, Flora y Sahumo, 
-                       <br class="d-none d-sm-block">Iluminarte, San Pablo, entre otras.</p>
-                </div>
-            </div>
-            <div id="products" class="d-flex justify-content-center row position-relative mt-3">
-                <!-- Imagenes de background -->
-                <div class="products__background products__background--1 d-none d-sm-block"></div>
-                <div class="products__background products__background--2"></div>
-
-                <!-- Grupos de productos -->
-                <div class="products__group--1 col-10 col-sm-4 col-lg-3">
-                    <div class="product d-flex flex-column justify-content-center my-3" style="background-image: url(./assets/img/prod-velas.jpg);" data-bs-toggle="modal" data-bs-target="#product-1">
-                        <div class="product__hover text-white text-center d-flex flex-column justify-content-center align-items-center py-2">
-                            <h1 class="my-0 text-white">Velas</h1>
-                        </div>
-                    </div>
-                    <div class="product d-flex flex-column justify-content-center my-3" style="background-image: url(./assets/img/prod-accesorios.jpg);" data-bs-toggle="modal" data-bs-target="#product-2">
-                        <div class="product__hover text-white text-center d-flex flex-column justify-content-center align-items-center py-2">
-                            <h1 class="my-0 text-white">Accesorios</h1>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="products__group--2 col-10 col-sm-4 col-lg-3">
-                    <div class="product d-flex flex-column justify-content-center my-0 my-sm-3" style="background-image: url(./assets/img/prod-souvenirs.jpg);" data-bs-toggle="modal" data-bs-target="#product-3">
-                        <div class="product__hover text-white text-center d-flex flex-column justify-content-center align-items-center py-2">
-                            <h1 class="my-0 text-white">Souvenirs</h1>
-                        </div>
-                    </div>
-                    <div class="product d-none d-sm-flex flex-column justify-content-center my-3" style="background-image: url(./assets/img/prod-esencias_aromaticas.jpg);" data-bs-toggle="modal" data-bs-target="#product-4">
-                        <div class="product__hover text-white text-center d-flex flex-column justify-content-center align-items-center py-2">
-                            <h1 class="my-0 text-white">Esencias aromaticas</h1>
-                        </div>
-                    </div>
-                    <div class="product d-none d-sm-flex flex-column justify-content-center my-3" style="background-image: url(./assets/img/prod-kits_y_rituales.jpg);" data-bs-toggle="modal" data-bs-target="#product-5">
-                        <div class="product__hover text-white text-center d-flex flex-column justify-content-center align-items-center py-2">
-                            <h1 class="my-0 text-white">Kits y rituales</h1>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="products__group--3 col-10 col-sm-4 col-lg-3">
-                    <div class="product d-none d-sm-flex flex-column justify-content-center my-0 my-sm-3" style="background-image: url(./assets/img/prod-para_ahumar.jpg);" data-bs-toggle="modal" data-bs-target="#product-6">
-                        <div class="product__hover text-white text-center d-flex flex-column justify-content-center align-items-center py-2">
-                            <h1 class="my-0 text-white">Para sahumar</h1>
-                        </div>
-                    </div>
-                    <div class="product d-none d-sm-flex flex-column justify-content-center my-3" style="background-image: url(./assets/img/prod-home.jpg);" data-bs-toggle="modal" data-bs-target="#product-7">
-                        <div class="product__hover text-white text-center d-flex flex-column justify-content-center align-items-center py-2">
-                            <h1 class="my-0 text-white">Home</h1>
-                        </div>
-                    </div>
-                    <!-- Solo visible en tablet (y mobile al dar click en "ver mas") -->
-                    <div class="d-none d-sm-flex d-lg-none product flex-column justify-content-center my-3" style="background-image: url(./assets/img/prod-libreria.jpg);" data-bs-toggle="modal" data-bs-target="#product-8">
-                        <div class="product__hover text-white text-center d-flex flex-column justify-content-center align-items-center py-2">
-                            <h1 class="my-0 text-white">Librería</h1>
-                        </div>
-                    </div>
-                </div>
-                <!-- Solo visible en desktop -->
-                <div class="d-none d-lg-block products__group--4 col-10 col-sm-4 col-lg-3">
-                    <div class="product d-flex flex-column justify-content-center my-0 my-sm-3" style="background-image: url(./assets/img/prod-libreria.jpg);" data-bs-toggle="modal" data-bs-target="#product-8">
-                        <div class="product__hover text-white text-center d-flex flex-column justify-content-center align-items-center">
-                            <h1 class="my-0 text-white">Librería</h1>
-                        </div>
-                    </div>
-                </div>  
-                <!-- Modales -->
-                <div>
-                    <div class="modal fade" id="product-1" tabindex="-1" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-lg">
-                          <div class="modal-content">
-                            <div class="modal-body">
-                                <div class="container-fluid p-0">
-                                    <div class="row">
-                                        <div class="col-lg-9">
-                                            <div class="d-flex d-lg-none justify-content-end mb-3">
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <img class="modal-img d-block m-auto" src="./assets/img/prod-velas.jpg" alt="Velas">
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <div class="d-none d-lg-flex justify-content-end">
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <h1 class="mt-3">Velas</h1>
-                                            <p class="mt-3">
-                                                Velas cortas y largas, <br class="d-none d-lg-block">
-                                                Velones 3 y 7 días, <br class="d-none d-lg-block">
-                                                Velas de noche, <br class="d-none d-lg-block">
-                                                Vela para Bautismo Veloncitos, <br class="d-none d-lg-block">
-                                                Velas decorativas.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                              <a href="https://wa.me/5493414825873?text=Hola%2C+vengo+de+la+pagina+de+Aurora+para+consultar+por+%22Velas%22." target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-success">Contactar</button></a>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="modal fade" id="product-2" tabindex="-1" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-lg">
-                          <div class="modal-content">
-                            <div class="modal-body">
-                                <div class="container-fluid p-0">
-                                    <div class="row">
-                                        <div class="col-lg-9">
-                                            <div class="d-flex d-lg-none justify-content-end mb-3">
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <img class="modal-img d-block m-auto" src="./assets/img/prod-accesorios.jpg" alt="Accesorios">
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <div class="d-none d-lg-flex justify-content-end">
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <h1 class="mt-3">Accesorios</h1>
-                                            <p class="mt-3">
-                                                Pulseras, <br class="d-none d-lg-block">
-                                                Collares, <br class="d-none d-lg-block">
-                                                Rosarios, <br class="d-none d-lg-block">
-                                                Acero, <br class="d-none d-lg-block">
-                                                Bijou, <br class="d-none d-lg-block">
-                                                Aros, <br class="d-none d-lg-block">
-                                                Llaveros, <br class="d-none d-lg-block">
-                                                Medallitas, <br class="d-none d-lg-block">
-                                                Bendiciones, <br class="d-none d-lg-block">
-                                                Accesorios para auto Accesorios de viaje, <br class="d-none d-lg-block">
-                                                Piedras cristales, <br class="d-none d-lg-block">
-                                                Ecobolsas, <br class="d-none d-lg-block">
-                                                Regalos para bebés, niños, Bautismo, Comunión y Confirmación, <br class="d-none d-lg-block">
-                                                Regalos para futuras mamás.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <a href="https://wa.me/5493414825873?text=Hola%2C+vengo+de+la+pagina+de+Aurora+para+consultar+por+%22Accesorios%22." target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-success">Contactar</button></a>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="modal fade" id="product-3" tabindex="-1" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-lg">
-                          <div class="modal-content">
-                            <div class="modal-body">
-                                <div class="container-fluid p-0">
-                                    <div class="row">
-                                        <div class="col-lg-9">
-                                            <div class="d-flex d-lg-none justify-content-end mb-3">
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <img class="modal-img d-block m-auto" src="./assets/img/prod-souvenirs.jpg" alt="Souvenirs">
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <div class="d-none d-lg-flex justify-content-end">
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <h1 class="mt-3">Souvenirs</h1>
-                                            <p class="mt-3">
-                                                Bautismo, <br class="d-none d-lg-block">
-                                                Comunión, <br class="d-none d-lg-block">
-                                                Confirmación, <br class="d-none d-lg-block">
-                                                Bodas, <br class="d-none d-lg-block">
-                                                Personalizados.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <a href="https://wa.me/5493414825873?text=Hola%2C+vengo+de+la+pagina+de+Aurora+para+consultar+por+%22Souvenirs%22." target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-success">Contactar</button></a>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="modal fade" id="product-4" tabindex="-1" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-lg">
-                          <div class="modal-content">
-                            <div class="modal-body">
-                                <div class="container-fluid p-0">
-                                    <div class="row">
-                                        <div class="col-lg-9">
-                                            <div class="d-flex d-lg-none justify-content-end mb-3">
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <img class="modal-img d-block m-auto" src="./assets/img/prod-esencias_aromaticas.jpg" alt="Esencias aromaticas">
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <div class="d-none d-lg-flex justify-content-end">
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <h1 class="mt-3">Esencias aromaticas</h1>
-                                            <p class="mt-3">
-                                                Esencias para hornitos Aceites intencionados, <br class="d-none d-lg-block">
-                                                Sprays energéticos, <br class="d-none d-lg-block">
-                                                Spray meditación, <br class="d-none d-lg-block">
-                                                Agua florida, <br class="d-none d-lg-block">
-                                                Difusores, <br class="d-none d-lg-block">
-                                                Aromatizantes de ambientes Sprays para autos, <br class="d-none d-lg-block">
-                                                Bruma de almohada.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <a href="https://wa.me/5493414825873?text=Hola%2C+vengo+de+la+pagina+de+Aurora+para+consultar+por+%22Esencias+aromaticas%22." target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-success">Contactar</button></a>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="modal fade" id="product-5" tabindex="-1" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-lg">
-                          <div class="modal-content">
-                            <div class="modal-body">
-                                <div class="container-fluid p-0">
-                                    <div class="row">
-                                        <div class="col-lg-9">
-                                            <div class="d-flex d-lg-none justify-content-end mb-3">
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <img class="modal-img d-block m-auto" src="./assets/img/prod-kits_y_rituales.jpg" alt="Kits y rituales">
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <div class="d-none d-lg-flex justify-content-end">
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <h1 class="mt-3">Kits y rituales</h1>
-                                            <p class="mt-3">
-                                                Kit de Limpieza Energética, <br class="d-none d-lg-block">
-                                                Ritual de Cumpleaños, <br class="d-none d-lg-block">
-                                                Kit de Luna Llena, <br class="d-none d-lg-block">
-                                                Kits herbales de Sagrada Madre, <br class="d-none d-lg-block">
-                                                Ritual de los deseos, <br class="d-none d-lg-block">
-                                                Ritual de Fin de Año, <br class="d-none d-lg-block">
-                                                Kit de siembra, <br class="d-none d-lg-block">
-                                                Diver kit para niños, <br class="d-none d-lg-block">
-                                                Cajas personalizadas.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <a href="https://wa.me/5493414825873?text=Hola%2C+vengo+de+la+pagina+de+Aurora+para+consultar+por+%22Kits+y+rituales%22." target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-success">Contactar</button></a>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="modal fade" id="product-6" tabindex="-1" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-lg">
-                          <div class="modal-content">
-                            <div class="modal-body">
-                                <div class="container-fluid p-0">
-                                    <div class="row">
-                                        <div class="col-lg-9">
-                                            <div class="d-flex d-lg-none justify-content-end mb-3">
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <img class="modal-img d-block m-auto" src="./assets/img/prod-para_ahumar.jpg" alt="Para sahumar">
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <div class="d-none d-lg-flex justify-content-end">
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <h1 class="mt-3">Para sahumar</h1>
-                                            <p class="mt-3">
-                                                Sahumerios artesanales de Sagrada Madre, <br class="d-none d-lg-block">
-                                                Sahumerios triple duración, <br class="d-none d-lg-block">
-                                                Sahumerios Satya, <br class="d-none d-lg-block">
-                                                Bombitas defumación activada de Sagrada Madre Sahumos: ramilletes de hierbas y resinas naturales, <br class="d-none d-lg-block"> 
-                                                Conos para cascada, <br class="d-none d-lg-block">
-                                                Carbón defumador, <br class="d-none d-lg-block">
-                                                Kit Limpieza energética Portasahumerios, <br class="d-none d-lg-block">
-                                                Cascadas de humo, <br class="d-none d-lg-block">
-                                                Hornitos.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <a href="https://wa.me/5493414825873?text=Hola%2C+vengo+de+la+pagina+de+Aurora+para+consultar+por+%22Para+sahumar%22." target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-success">Contactar</button></a>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="modal fade" id="product-7" tabindex="-1" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-lg">
-                          <div class="modal-content">
-                            <div class="modal-body">
-                                <div class="container-fluid p-0">
-                                    <div class="row">
-                                        <div class="col-lg-9">
-                                            <div class="d-flex d-lg-none justify-content-end mb-3">
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <img class="modal-img d-block m-auto" src="./assets/img/prod-home.jpg" alt="Home">
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <div class="d-none d-lg-flex justify-content-end">
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <h1 class="mt-3">Home</h1>
-                                            <p class="mt-3">
-                                                Mates, <br class="d-none d-lg-block">
-                                                Tazas, <br class="d-none d-lg-block">
-                                                Botellas, <br class="d-none d-lg-block">
-                                                Hornitos, <br class="d-none d-lg-block">
-                                                Lámparas de sal, <br class="d-none d-lg-block">
-                                                Cascadas de humo Portasahumerios, <br class="d-none d-lg-block">
-                                                Portavelas, <br class="d-none d-lg-block">
-                                                Fanales, <br class="d-none d-lg-block">
-                                                Bendiciones de hogar Imágenes, <br class="d-none d-lg-block">
-                                                Pesebres, <br class="d-none d-lg-block">
-                                                Velas y Altares, <br class="d-none d-lg-block">
-                                                Deco para bebés y niños, <br class="d-none d-lg-block">
-                                                Deco para Navidad.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <a href="https://wa.me/5493414825873?text=Hola%2C+vengo+de+la+pagina+de+Aurora+para+consultar+por+%22Home%22." target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-success">Contactar</button></a>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="modal fade" id="product-8" tabindex="-1" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-lg">
-                          <div class="modal-content">
-                            <div class="modal-body">
-                                <div class="container-fluid p-0">
-                                    <div class="row">
-                                        <div class="col-lg-9">
-                                            <div class="d-flex d-lg-none justify-content-end mb-3">
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <img class="modal-img d-block m-auto" src="./assets/img/prod-libreria.jpg" alt="Librería">
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <div class="d-none d-lg-flex justify-content-end">
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <h1 class="mt-3">Librería</h1>
-                                            <p class="mt-3">
-                                                Biblias, <br class="d-none d-lg-block">
-                                                Evangelios, <br class="d-none d-lg-block">
-                                                Almanaques, <br class="d-none d-lg-block">
-                                                Agendas, <br class="d-none d-lg-block">
-                                                Cuadernos y Libros, <br class="d-none d-lg-block">
-                                                Lapiceras, <br class="d-none d-lg-block">
-                                                Álbum de Bautismo, <br class="d-none d-lg-block">
-                                                Álbum de Comunión, <br class="d-none d-lg-block">
-                                                Estampitas, <br class="d-none d-lg-block">
-                                                Calcos e Imanes, <br class="d-none d-lg-block">
-                                                Postales, <br class="d-none d-lg-block">
-                                                Banderines, <br class="d-none d-lg-block">
-                                                Libros para Catequesis, <br class="d-none d-lg-block">
-                                                Libros de Reflexiones.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <a href="https://wa.me/5493414825873?text=Hola%2C+vengo+de+la+pagina+de+Aurora+para+consultar+por+%22Librería%22." target="_blank" rel="noopener noreferrer"><button type="button" class="btn btn-success">Contactar</button></a>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                </div>                 
-            </div>
-            <div class="d-flex d-sm-none justify-content-center mt-4">
-                <button class="btn btn-mas">VER MÁS</button>
-            </div>
+  <header>
+    <!-- style="position: sticky; top: 0; left: 0; z-index: 2;" -->
+    <nav class="navbar navbar-expand-lg navbar-light headerNav py-1">
+      <div class="container-fluid container">
+        <a class="navbar-brand row" href="index.html"><img src="./assets/img/logo.svg" alt="Logo Aurora Santería"></a>
+        <div class="collapse navbar-collapse row" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-center">
+            <li class="nav-item px-3">
+              <a class="nav-link text-white" href="#quienes-somos">Quiénes somos</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link text-white" href="#productos">Productos</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link text-white" href="#comprar">Comprar</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link text-white" href="#ubicacion">Ubicación</a>
+            </li>
+          </ul>
         </div>
+        <div class="redesHeader row">
+          <ul class="d-flex justify-content-center m-0">
+            <li><a href=""><img src="./assets/img/whatsapp.svg"></a></li>
+            <li><a href=""><img src="./assets/img/instagram.svg"></a></li>
+            <li><a href=""><img src="./assets/img/facebook.svg"></a></li>
+          </ul>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="hero">
+      <div class="card">
+        <img src="./assets/img/Header.jpg" class="card-img">
+        <div class="card-img-overlay d-flex justify-content-center align-items-center">
+          <div>
+            <img class="text-center" src="./assets/img/Marca.png" alt="Logo Aurora Santería">
+            <p class="text-center m-3">Somos un emprendimiento familiar de <br>
+              artículos religiosos dedicados a hacer <br>
+              de un regalo una experiencia única.</p>
+            <div class="text-center">
+              <a href="">
+                <button class="btnColor text-white btn">
+                  <img style="width: 36px;" src="./assets/img/buttonWAPP.png">
+                  <span class="align-middle lh-1">Contáctanos</span>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+    <section id="quienes-somos" style="padding: 5% 0;">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-4 offset-2">
+            <div>
+              <p style="color: #434242;">Somos un emprendimiento familiar argentino que nació hace muchos
+                años gracias a la idea de dos grandes mujeres, Clara y Liliana, mamá e hija, en forma
+                de agradecimiento y con el objetivo
+                de acercarle a su ciudad objetos
+                con valor emocional.</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <img src="./assets/img/Rectangle 7.jpg" style="max-height: 465px;">
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="mx-auto" style="width: 25%; border-bottom: 1px solid #E1BAAE;"></div>
+    <!-- Section de Productos -->
+    <section style="padding: 5% 0;" id="productos" class="container-md d-flex justify-content-center">
+      <div class="container products">
+        <div class="d-flex justify-content-center">
+          <div class="text-center col-sm-10 col-lg-6 mx-3">
+            <h1>Nuestros productos</h1>
+            <p class="mt-4">En esta sección podes encontrar todas las categorías de productos que ofrecemos
+              en Aurora, de marcas como
+              <br class="d-none d-sm-block"> Salve Regina, Sagrada Madre, Flora y Sahumo,
+              <br class="d-none d-sm-block">Iluminarte, San Pablo, entre otras.
+            </p>
+          </div>
+        </div>
+        <div id="products" class="d-flex justify-content-center row position-relative mt-3">
+          <!-- Imagenes de background -->
+          <div class="products__background products__background--1 d-none d-sm-block"></div>
+          <div class="products__background products__background--2"></div>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="./assets/js/index.js"></script>
+          <!-- Grupos de productos -->
+          <div class="products__group--1 col-10 col-sm-4 col-lg-3">
+            <div class="product d-flex flex-column justify-content-center my-3"
+              style="background-image: url(./assets/img/prod-velas.jpg);" data-bs-toggle="modal"
+              data-bs-target="#product-1">
+              <div
+                class="product__hover text-white text-center d-flex flex-column justify-content-center align-items-center py-2">
+                <h1 class="my-0 text-white">Velas</h1>
+              </div>
+            </div>
+            <div class="product d-flex flex-column justify-content-center my-3"
+              style="background-image: url(./assets/img/prod-accesorios.jpg);" data-bs-toggle="modal"
+              data-bs-target="#product-2">
+              <div
+                class="product__hover text-white text-center d-flex flex-column justify-content-center align-items-center py-2">
+                <h1 class="my-0 text-white">Accesorios</h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="products__group--2 col-10 col-sm-4 col-lg-3">
+            <div class="product d-flex flex-column justify-content-center my-0 my-sm-3"
+              style="background-image: url(./assets/img/prod-souvenirs.jpg);" data-bs-toggle="modal"
+              data-bs-target="#product-3">
+              <div
+                class="product__hover text-white text-center d-flex flex-column justify-content-center align-items-center py-2">
+                <h1 class="my-0 text-white">Souvenirs</h1>
+              </div>
+            </div>
+            <div class="product d-none d-sm-flex flex-column justify-content-center my-3"
+              style="background-image: url(./assets/img/prod-esencias_aromaticas.jpg);" data-bs-toggle="modal"
+              data-bs-target="#product-4">
+              <div
+                class="product__hover text-white text-center d-flex flex-column justify-content-center align-items-center py-2">
+                <h1 class="my-0 text-white">Esencias aromaticas</h1>
+              </div>
+            </div>
+            <div class="product d-none d-sm-flex flex-column justify-content-center my-3"
+              style="background-image: url(./assets/img/prod-kits_y_rituales.jpg);" data-bs-toggle="modal"
+              data-bs-target="#product-5">
+              <div
+                class="product__hover text-white text-center d-flex flex-column justify-content-center align-items-center py-2">
+                <h1 class="my-0 text-white">Kits y rituales</h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="products__group--3 col-10 col-sm-4 col-lg-3">
+            <div class="product d-none d-sm-flex flex-column justify-content-center my-0 my-sm-3"
+              style="background-image: url(./assets/img/prod-para_ahumar.jpg);" data-bs-toggle="modal"
+              data-bs-target="#product-6">
+              <div
+                class="product__hover text-white text-center d-flex flex-column justify-content-center align-items-center py-2">
+                <h1 class="my-0 text-white">Para sahumar</h1>
+              </div>
+            </div>
+            <div class="product d-none d-sm-flex flex-column justify-content-center my-3"
+              style="background-image: url(./assets/img/prod-home.jpg);" data-bs-toggle="modal"
+              data-bs-target="#product-7">
+              <div
+                class="product__hover text-white text-center d-flex flex-column justify-content-center align-items-center py-2">
+                <h1 class="my-0 text-white">Home</h1>
+              </div>
+            </div>
+            <!-- Solo visible en tablet (y mobile al dar click en "ver mas") -->
+            <div class="d-none d-sm-flex d-lg-none product flex-column justify-content-center my-3"
+              style="background-image: url(./assets/img/prod-libreria.jpg);" data-bs-toggle="modal"
+              data-bs-target="#product-8">
+              <div
+                class="product__hover text-white text-center d-flex flex-column justify-content-center align-items-center py-2">
+                <h1 class="my-0 text-white">Librería</h1>
+              </div>
+            </div>
+          </div>
+          <!-- Solo visible en desktop -->
+          <div class="d-none d-lg-block products__group--4 col-10 col-sm-4 col-lg-3">
+            <div class="product d-flex flex-column justify-content-center my-0 my-sm-3"
+              style="background-image: url(./assets/img/prod-libreria.jpg);" data-bs-toggle="modal"
+              data-bs-target="#product-8">
+              <div
+                class="product__hover text-white text-center d-flex flex-column justify-content-center align-items-center">
+                <h1 class="my-0 text-white">Librería</h1>
+              </div>
+            </div>
+          </div>
+          <!-- Modales -->
+          <div>
+            <div class="modal fade" id="product-1" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="container-fluid p-0">
+                      <div class="row">
+                        <div class="col-lg-9">
+                          <div class="d-flex d-lg-none justify-content-end mb-3">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <img class="modal-img d-block m-auto" src="./assets/img/prod-velas.jpg" alt="Velas">
+                        </div>
+                        <div class="col-lg-3">
+                          <div class="d-none d-lg-flex justify-content-end">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <h1 class="mt-3">Velas</h1>
+                          <p class="mt-3">
+                            Velas cortas y largas, <br class="d-none d-lg-block">
+                            Velones 3 y 7 días, <br class="d-none d-lg-block">
+                            Velas de noche, <br class="d-none d-lg-block">
+                            Vela para Bautismo Veloncitos, <br class="d-none d-lg-block">
+                            Velas decorativas.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="https://wa.me/5493414825873?text=Hola%2C+vengo+de+la+pagina+de+Aurora+para+consultar+por+%22Velas%22."
+                      target="_blank" rel="noopener noreferrer"><button type="button"
+                        class="btn btn-success">Contactar</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="product-2" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="container-fluid p-0">
+                      <div class="row">
+                        <div class="col-lg-9">
+                          <div class="d-flex d-lg-none justify-content-end mb-3">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <img class="modal-img d-block m-auto" src="./assets/img/prod-accesorios.jpg" alt="Accesorios">
+                        </div>
+                        <div class="col-lg-3">
+                          <div class="d-none d-lg-flex justify-content-end">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <h1 class="mt-3">Accesorios</h1>
+                          <p class="mt-3">
+                            Pulseras, <br class="d-none d-lg-block">
+                            Collares, <br class="d-none d-lg-block">
+                            Rosarios, <br class="d-none d-lg-block">
+                            Acero, <br class="d-none d-lg-block">
+                            Bijou, <br class="d-none d-lg-block">
+                            Aros, <br class="d-none d-lg-block">
+                            Llaveros, <br class="d-none d-lg-block">
+                            Medallitas, <br class="d-none d-lg-block">
+                            Bendiciones, <br class="d-none d-lg-block">
+                            Accesorios para auto Accesorios de viaje, <br class="d-none d-lg-block">
+                            Piedras cristales, <br class="d-none d-lg-block">
+                            Ecobolsas, <br class="d-none d-lg-block">
+                            Regalos para bebés, niños, Bautismo, Comunión y Confirmación,
+                            <br class="d-none d-lg-block">
+                            Regalos para futuras mamás.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="https://wa.me/5493414825873?text=Hola%2C+vengo+de+la+pagina+de+Aurora+para+consultar+por+%22Accesorios%22."
+                      target="_blank" rel="noopener noreferrer"><button type="button"
+                        class="btn btn-success">Contactar</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="product-3" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="container-fluid p-0">
+                      <div class="row">
+                        <div class="col-lg-9">
+                          <div class="d-flex d-lg-none justify-content-end mb-3">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <img class="modal-img d-block m-auto" src="./assets/img/prod-souvenirs.jpg" alt="Souvenirs">
+                        </div>
+                        <div class="col-lg-3">
+                          <div class="d-none d-lg-flex justify-content-end">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <h1 class="mt-3">Souvenirs</h1>
+                          <p class="mt-3">
+                            Bautismo, <br class="d-none d-lg-block">
+                            Comunión, <br class="d-none d-lg-block">
+                            Confirmación, <br class="d-none d-lg-block">
+                            Bodas, <br class="d-none d-lg-block">
+                            Personalizados.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="https://wa.me/5493414825873?text=Hola%2C+vengo+de+la+pagina+de+Aurora+para+consultar+por+%22Souvenirs%22."
+                      target="_blank" rel="noopener noreferrer"><button type="button"
+                        class="btn btn-success">Contactar</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="product-4" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="container-fluid p-0">
+                      <div class="row">
+                        <div class="col-lg-9">
+                          <div class="d-flex d-lg-none justify-content-end mb-3">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <img class="modal-img d-block m-auto" src="./assets/img/prod-esencias_aromaticas.jpg"
+                            alt="Esencias aromaticas">
+                        </div>
+                        <div class="col-lg-3">
+                          <div class="d-none d-lg-flex justify-content-end">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <h1 class="mt-3">Esencias aromaticas</h1>
+                          <p class="mt-3">
+                            Esencias para hornitos Aceites intencionados, <br class="d-none d-lg-block">
+                            Sprays energéticos, <br class="d-none d-lg-block">
+                            Spray meditación, <br class="d-none d-lg-block">
+                            Agua florida, <br class="d-none d-lg-block">
+                            Difusores, <br class="d-none d-lg-block">
+                            Aromatizantes de ambientes Sprays para autos, <br class="d-none d-lg-block">
+                            Bruma de almohada.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="https://wa.me/5493414825873?text=Hola%2C+vengo+de+la+pagina+de+Aurora+para+consultar+por+%22Esencias+aromaticas%22."
+                      target="_blank" rel="noopener noreferrer"><button type="button"
+                        class="btn btn-success">Contactar</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="product-5" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="container-fluid p-0">
+                      <div class="row">
+                        <div class="col-lg-9">
+                          <div class="d-flex d-lg-none justify-content-end mb-3">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <img class="modal-img d-block m-auto" src="./assets/img/prod-kits_y_rituales.jpg"
+                            alt="Kits y rituales">
+                        </div>
+                        <div class="col-lg-3">
+                          <div class="d-none d-lg-flex justify-content-end">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <h1 class="mt-3">Kits y rituales</h1>
+                          <p class="mt-3">
+                            Kit de Limpieza Energética, <br class="d-none d-lg-block">
+                            Ritual de Cumpleaños, <br class="d-none d-lg-block">
+                            Kit de Luna Llena, <br class="d-none d-lg-block">
+                            Kits herbales de Sagrada Madre, <br class="d-none d-lg-block">
+                            Ritual de los deseos, <br class="d-none d-lg-block">
+                            Ritual de Fin de Año, <br class="d-none d-lg-block">
+                            Kit de siembra, <br class="d-none d-lg-block">
+                            Diver kit para niños, <br class="d-none d-lg-block">
+                            Cajas personalizadas.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="https://wa.me/5493414825873?text=Hola%2C+vengo+de+la+pagina+de+Aurora+para+consultar+por+%22Kits+y+rituales%22."
+                      target="_blank" rel="noopener noreferrer"><button type="button"
+                        class="btn btn-success">Contactar</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="product-6" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="container-fluid p-0">
+                      <div class="row">
+                        <div class="col-lg-9">
+                          <div class="d-flex d-lg-none justify-content-end mb-3">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <img class="modal-img d-block m-auto" src="./assets/img/prod-para_ahumar.jpg"
+                            alt="Para sahumar">
+                        </div>
+                        <div class="col-lg-3">
+                          <div class="d-none d-lg-flex justify-content-end">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <h1 class="mt-3">Para sahumar</h1>
+                          <p class="mt-3">
+                            Sahumerios artesanales de Sagrada Madre, <br class="d-none d-lg-block">
+                            Sahumerios triple duración, <br class="d-none d-lg-block">
+                            Sahumerios Satya, <br class="d-none d-lg-block">
+                            Bombitas defumación activada de Sagrada Madre Sahumos:
+                            ramilletes de hierbas y resinas naturales, <br class="d-none d-lg-block">
+                            Conos para cascada, <br class="d-none d-lg-block">
+                            Carbón defumador, <br class="d-none d-lg-block">
+                            Kit Limpieza energética Portasahumerios, <br class="d-none d-lg-block">
+                            Cascadas de humo, <br class="d-none d-lg-block">
+                            Hornitos.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="https://wa.me/5493414825873?text=Hola%2C+vengo+de+la+pagina+de+Aurora+para+consultar+por+%22Para+sahumar%22."
+                      target="_blank" rel="noopener noreferrer"><button type="button"
+                        class="btn btn-success">Contactar</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="product-7" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="container-fluid p-0">
+                      <div class="row">
+                        <div class="col-lg-9">
+                          <div class="d-flex d-lg-none justify-content-end mb-3">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <img class="modal-img d-block m-auto" src="./assets/img/prod-home.jpg" alt="Home">
+                        </div>
+                        <div class="col-lg-3">
+                          <div class="d-none d-lg-flex justify-content-end">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <h1 class="mt-3">Home</h1>
+                          <p class="mt-3">
+                            Mates, <br class="d-none d-lg-block">
+                            Tazas, <br class="d-none d-lg-block">
+                            Botellas, <br class="d-none d-lg-block">
+                            Hornitos, <br class="d-none d-lg-block">
+                            Lámparas de sal, <br class="d-none d-lg-block">
+                            Cascadas de humo Portasahumerios, <br class="d-none d-lg-block">
+                            Portavelas, <br class="d-none d-lg-block">
+                            Fanales, <br class="d-none d-lg-block">
+                            Bendiciones de hogar Imágenes, <br class="d-none d-lg-block">
+                            Pesebres, <br class="d-none d-lg-block">
+                            Velas y Altares, <br class="d-none d-lg-block">
+                            Deco para bebés y niños, <br class="d-none d-lg-block">
+                            Deco para Navidad.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="https://wa.me/5493414825873?text=Hola%2C+vengo+de+la+pagina+de+Aurora+para+consultar+por+%22Home%22."
+                      target="_blank" rel="noopener noreferrer"><button type="button"
+                        class="btn btn-success">Contactar</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="product-8" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="container-fluid p-0">
+                      <div class="row">
+                        <div class="col-lg-9">
+                          <div class="d-flex d-lg-none justify-content-end mb-3">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <img class="modal-img d-block m-auto" src="./assets/img/prod-libreria.jpg" alt="Librería">
+                        </div>
+                        <div class="col-lg-3">
+                          <div class="d-none d-lg-flex justify-content-end">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <h1 class="mt-3">Librería</h1>
+                          <p class="mt-3">
+                            Biblias, <br class="d-none d-lg-block">
+                            Evangelios, <br class="d-none d-lg-block">
+                            Almanaques, <br class="d-none d-lg-block">
+                            Agendas, <br class="d-none d-lg-block">
+                            Cuadernos y Libros, <br class="d-none d-lg-block">
+                            Lapiceras, <br class="d-none d-lg-block">
+                            Álbum de Bautismo, <br class="d-none d-lg-block">
+                            Álbum de Comunión, <br class="d-none d-lg-block">
+                            Estampitas, <br class="d-none d-lg-block">
+                            Calcos e Imanes, <br class="d-none d-lg-block">
+                            Postales, <br class="d-none d-lg-block">
+                            Banderines, <br class="d-none d-lg-block">
+                            Libros para Catequesis, <br class="d-none d-lg-block">
+                            Libros de Reflexiones.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="https://wa.me/5493414825873?text=Hola%2C+vengo+de+la+pagina+de+Aurora+para+consultar+por+%22Librería%22."
+                      target="_blank" rel="noopener noreferrer"><button type="button"
+                        class="btn btn-success">Contactar</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex d-sm-none justify-content-center mt-4">
+          <button class="btn btn-mas">VER MÁS</button>
+        </div>
+      </div>
+    </section>
+    <section id="comprar" style="padding: 5% 0;">
+      <p class="text-center" style="font-size: 27px; font-weight:700;">Cómo comprar</p>
+      <div class="row d-flex justify-content-center" style="margin: 3% 10% 3% 10%;">
+        <div class="col-3" style="display: flex; flex-direction:column;align-items: center;">
+          <img src="./assets/img/Lupa.png">
+          <p style="text-align: center;">
+            <b>Buscá</b><br>
+            Explora entre las variedades
+            de nuestros productos.
+          </p>
+        </div>
+        <div class="col-3" style="display: flex; flex-direction:column;align-items: center; border-left: 1px solid #A4CE90; border-right: 1px solid #A4CE90">
+          <img src="./assets/img/dedo.png">
+          <p style="text-align: center;">
+            <b>Elegí</b><br>
+            Encuentra el regalo perfecto para esa persona o el producto que estabas buscando.
+          </p>
+        </div>
+        <div class="col-3" style="display: flex; flex-direction:column;align-items: center;">
+          <img src="./assets/img/cel.png">
+          <p style="text-align: center;">
+            <b>Contáctanos</b><br>
+            Mandanos
+            un mensaje para
+            coordinar la compra.
+          </p>
+        </div>
+      </div>
+      <div style="display:flex; justify-content: center; align-items: center;">
+        <div style="margin: 0 3%; display: flex; align-items: center; flex-direction: column;">
+          <img src="./assets/img/Whatsapp.png">
+          <p>+54 9 341 4825873</p>
+        </div>
+        <div style="margin: 0 3%; display: flex; align-items: center; flex-direction: column;">
+          <img src="./assets/img/Insta.png">
+          <p>@aurorasanteria</p>
+        </div>
+        <div style="margin: 0 3%; display: flex; align-items: center; flex-direction: column;">
+          <img src="./assets/img/FB.png">
+          <p>Aurora Santeria</p>
+        </div>
+      </div>
+    </section>
+    <section id="ubicacion" class="container">
+      <div class="row">
+        <img src="" alt="">
+        <div class="col-5 offset-2">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11043.919074377414!2d-58.44029317271439!3d-34.619917516437695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca469b5a1195%3A0xa226b215f1237ae7!2sRosario%2C%20C1424%20CABA!5e0!3m2!1ses-419!2sar!4v1652379111239!5m2!1ses-419!2sar"
+            style="border:0; width: 100%; height: 425px;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col-4" style="padding-top: 5%;">
+          <p style="font-size: 27px; font-weight:700;">Dónde encontrarnos</p>
+          <p><br>
+            <b>Dirección:</b><br>
+            Paraná 1151,<br>
+            Carcarañá, Santa Fe.<br>
+            <br>
+            <b>Días de atención:</b><br>
+            Lunes a sábados <br>
+            <br>
+            Envíos a Rosario<br>
+            y retiro en punto de entrega.<br><br>
+          </p>
+          <div style="padding: 8px; width: 75%; background-color: #A4CE90;"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer style="background-color: #A4CE90; margin: 5% 0 0 0;">
+    <div class="text-center" style="padding: 23px 0;">
+      <p style="font-size: 16px;" class="text-white m-0">AURORASANTERIA.COM</p>
+    </div>
+  </footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="./assets/js/index.js"></script>
 </body>
+
 </html>

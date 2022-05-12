@@ -1,4 +1,8 @@
 /* General */
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Poppins', sans-serif;
 }
@@ -23,6 +27,21 @@ p{
     letter-spacing: 0.4px;
     color: #434242;
 }
+
+/* Header */
+
+.headerNav {
+    background-color: #A4CE90;
+}
+
+.redesHeader ul li {
+    list-style: none;
+}
+
+.btnColor {
+    background-color: #E1BAAE;
+}
+
 /* Section: Productos */
 .product{
     position: relative;
@@ -87,6 +106,9 @@ p{
     border-radius: 8px;
 }
 @media (max-width: 575px){
+    .redesHeader {
+        display: none;
+    }
     .products__background{
         background-size: 190px;
     }
@@ -107,6 +129,7 @@ p{
         line-height: 1.25rem;
     }
 }
+
 @media (min-width: 576px) and (max-width: 991px){
     .products__group--3{
         margin-top: 64px;
@@ -123,6 +146,7 @@ p{
         line-height: 1.25rem;
     }
 }
+
 @media (min-width: 992px){
     /* Esta clase deberia cambiarse a "m-page" o algo similar, y usarla en todas las section... */
     .products{
