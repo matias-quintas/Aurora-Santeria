@@ -34,16 +34,22 @@ p{
     padding: 2.5px 0;
 }
 .headerNav ul li > .active{
-    color: #434242 !important;
+    color: #719E5B !important;
 }
 .redesHeader ul li {
     list-style: none;
 }
-.btnColor {
+.btn--hero {
+    width: 365px;
     background-color: #E1BAAE;
 }
-#hero{
+.hero{
     margin-top: 72px;
+    width: 100vw;
+    height: 73vh;
+    background-image: url(../img/Header.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 /* Section: Productos */

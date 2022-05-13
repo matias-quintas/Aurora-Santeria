@@ -19,9 +19,9 @@
 
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" tabindex="0">
   <header>
-    <nav id="navbar" class="navbar navbar-expand-md headerNav fixed-top">
+    <nav id="navbar" class="navbar navbar-expand-md navbar-dark headerNav fixed-top">
       <div class="container px-lg-5">
-        <a class="navbar-brand ms-lg-4 ps-xl-2" href="index.html"><img src="./assets/img/logo.svg" alt="Logo Aurora Santería"></a>
+        <a class="navbar-brand ms-lg-4 ps-xl-2 href="index.html"><img src="./assets/img/logo.svg" alt="Logo Aurora Santería"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -55,23 +55,20 @@
   <main>
     <!-- Hero -->
     <section id="hero">
-      <div class="card">
-        <img src="./assets/img/Header.jpg" class="card-img">
-        <div class="card-img-overlay d-flex justify-content-center align-items-center">
-          <div>
-            <img class="text-center" src="./assets/img/Marca.png" alt="Logo Aurora Santería">
-            <p class="text-center m-3">Somos un emprendimiento familiar de <br>
-              artículos religiosos dedicados a hacer <br>
+      <div class="hero d-flex justify-content-center align-items-center">
+        <div class="d-flex flex-column mx-4 mx-sm-0">
+            <img class="text-center col-10 m-auto" src="./assets/img/Marca.png" alt="Logo Aurora Santería">
+            <p style="font-size: 1.25rem;" class="text-center m-3">Somos un emprendimiento familiar de <br class="d-none d-sm-block">
+              artículos religiosos dedicados a hacer <br class="d-none d-sm-block">
               de un regalo una experiencia única.</p>
-            <div class="text-center">
+            <div class="text-center d-none d-sm-block">
               <a href="">
-                <button class="btnColor text-white btn">
-                  <img style="width: 36px;" src="./assets/img/buttonWAPP.png">
+                <button class="btn btn--hero text-white">
+                  <img style="width: 2.25rem;" src="./assets/img/buttonWAPP.png">
                   <span class="align-middle lh-1">Contáctanos</span>
                 </button>
               </a>
             </div>
-          </div>
         </div>
       </div>
     </section>
