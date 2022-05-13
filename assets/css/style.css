@@ -43,6 +43,9 @@ p{
     width: 365px;
     background-color: #E1BAAE;
 }
+.btn--hero > img{
+    width: 2.25rem;
+}
 .hero{
     margin-top: 72px;
     width: 100vw;
