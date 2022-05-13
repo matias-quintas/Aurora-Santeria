@@ -72,6 +72,7 @@ p{
     bottom: 0;
     border-radius: 0 0 8px 8px;
     background-color: #E29E88;
+    cursor: pointer;
 }
 .products__group--1{
     margin-top: 72px;
