@@ -29,17 +29,21 @@ p{
 }
 
 /* Header */
-
 .headerNav {
     background-color: #A4CE90;
+    padding: 2.5px 0;
 }
-
+.headerNav ul li > .active{
+    color: #434242 !important;
+}
 .redesHeader ul li {
     list-style: none;
 }
-
 .btnColor {
     background-color: #E1BAAE;
+}
+#hero{
+    margin-top: 72px;
 }
 
 /* Section: Productos */
@@ -69,17 +73,6 @@ p{
 .products__group--4{
     margin-top: 324px;
 }
-@media (max-width: 575px) {
-    .products__group--1{
-        margin-top: 0;
-    }
-    .products__group--3{
-        margin-top: 0;
-    }
-    .products__group--4{
-        margin-top: 0;
-    } 
-}
 .products__background{
     position: absolute;
     z-index: 0;
@@ -106,9 +99,15 @@ p{
     border-radius: 8px;
 }
 @media (max-width: 575px){
-    .redesHeader {
-        display: none;
+    .products__group--1{
+        margin-top: 0;
     }
+    .products__group--3{
+        margin-top: 0;
+    }
+    .products__group--4{
+        margin-top: 0;
+    } 
     .products__background{
         background-size: 190px;
     }
@@ -149,7 +148,7 @@ p{
 
 @media (min-width: 992px){
     /* Esta clase deberia cambiarse a "m-page" o algo similar, y usarla en todas las section... */
-    .products{
+    .m-page{
         margin: 0 5.55%;
     }
     .product__hover{
