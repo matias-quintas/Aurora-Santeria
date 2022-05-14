@@ -35,15 +35,6 @@ p{
     width: 25%;
     border-bottom: 2px solid #E1BAAE;
 }
-.hr-comprar{
-    opacity: 1;
-    border-bottom: 2px solid #A4CE90;
-}
-.hr-ubicacion{
-    padding: 8px;
-    background-color: #A4CE90;
-    opacity: 1;
-}
 .vr{
     width: 2px;
     color: #A4CE90;
@@ -79,6 +70,11 @@ footer{
 }
 .redesHeader ul li {
     list-style: none;
+    transition: 150ms ease-in;
+}
+.redesHeader ul li:hover {
+    background-color: #D4DFBD;
+    border-radius: 100%;
 }
 .btn--hero {
     width: 365px;
@@ -172,6 +168,10 @@ footer{
     background-image: url(../img/bg-comoComprar.png);
     background-position: center;
 }
+.hr-comprar{
+    opacity: 1;
+    border-bottom: 2px solid #A4CE90;
+}
 
 /* Section: mapa o ubicacion  */
 .ubicacion__bg{
@@ -184,6 +184,11 @@ footer{
     background-position: left top;
     left: 68px;
     top: -68px;
+}
+.hr-ubicacion{
+    padding: 8px;
+    background-color: #A4CE90;
+    opacity: 1;
 }
 
 
