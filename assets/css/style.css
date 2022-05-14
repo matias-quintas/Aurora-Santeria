@@ -27,6 +27,28 @@ p{
     letter-spacing: 0.4px;
     color: #434242;
 }
+.pt-section{
+    padding-top: 6%;
+}
+.hr-section{
+    opacity: 1;
+    width: 25%;
+    border-bottom: 2px solid #E1BAAE;
+}
+.hr-comprar{
+    opacity: 1;
+    border-bottom: 2px solid #A4CE90;
+}
+.vr{
+    width: 2px;
+    color: #A4CE90;
+    padding: 0;
+    opacity: 1;
+}
+footer{
+    background-color: #A4CE90;
+    margin: 5% 0 0 0;
+}
 
 /* Header */
 .headerNav {
@@ -48,9 +70,8 @@ p{
 }
 .hero{
     margin-top: 72px;
-    width: 100vw;
+    width: 100%;
     height: 73vh;
-    background-image: url(../img/Header.jpg);
     background-size: cover;
     background-position: center;
 }

@@ -55,7 +55,7 @@
   <main>
     <!-- Hero -->
     <section id="hero">
-      <div class="hero d-flex justify-content-center align-items-center">
+      <div class="hero d-flex justify-content-center align-items-center" style="background-image: url(./assets/img/Header.jpg);">
         <div class="d-flex flex-column mx-4 mx-sm-0">
             <img class="text-center col-10 m-auto" src="./assets/img/Marca.png" alt="Logo Aurora Santería">
             <p style="font-size: 1.25rem;" class="text-center m-3">Somos un emprendimiento familiar de <br class="d-none d-sm-block">
@@ -73,7 +73,7 @@
       </div>
     </section>
     <!-- Section Quienes somos -->
-    <section id="quienes-somos" style="padding: 5% 0;">
+    <section id="quienes-somos" class="pt-section">
       <div class="container">
         <div class="row justify-content-sm-center align-items-center">
           <div class="col-lg-8 row justify-content-sm-center align-items-center">
@@ -92,9 +92,9 @@
         </div>
       </div>
     </section>
-    <div class="mx-auto" style="width: 25%; border-bottom: 1px solid #E1BAAE;"></div>
+    <hr class="d-block m-auto mt-5 hr-section">
     <!-- Section de Productos -->
-    <section style="padding: 5% 0;" id="productos" class="container-md d-flex justify-content-center">
+    <section id="productos" class="container-md d-flex justify-content-center pt-section">
       <div class="container m-page">
         <div class="d-flex justify-content-center">
           <div class="text-center col-sm-10 col-lg-6 mx-3">
@@ -535,51 +535,84 @@
       </div>
     </section>
     <!-- Section Como comprar -->
-    <section id="comprar" style="padding: 5% 0;">
-      <p class="text-center" style="font-size: 27px; font-weight:700;">Cómo comprar</p>
-      <div class="row d-flex justify-content-center" style="margin: 3% 10% 3% 10%;">
-        <div class="col-3" style="display: flex; flex-direction:column;align-items: center;">
-          <img src="./assets/img/Lupa.png">
-          <p style="text-align: center;">
-            <b>Buscá</b><br>
-            Explora entre las variedades
-            de nuestros productos.
-          </p>
-        </div>
-        <div class="col-3" style="display: flex; flex-direction:column;align-items: center; border-left: 1px solid #A4CE90; border-right: 1px solid #A4CE90">
-          <img src="./assets/img/dedo.png">
-          <p style="text-align: center;">
-            <b>Elegí</b><br>
-            Encuentra el regalo perfecto para esa persona o el producto que estabas buscando.
-          </p>
-        </div>
-        <div class="col-3" style="display: flex; flex-direction:column;align-items: center;">
-          <img src="./assets/img/cel.png">
-          <p style="text-align: center;">
-            <b>Contáctanos</b><br>
-            Mandanos
-            un mensaje para
-            coordinar la compra.
-          </p>
-        </div>
-      </div>
-      <div style="display:flex; justify-content: center; align-items: center;">
-        <div style="margin: 0 3%; display: flex; align-items: center; flex-direction: column;">
-          <img src="./assets/img/Whatsapp.png">
-          <p>+54 9 341 4825873</p>
-        </div>
-        <div style="margin: 0 3%; display: flex; align-items: center; flex-direction: column;">
-          <img src="./assets/img/Insta.png">
-          <p>@aurorasanteria</p>
-        </div>
-        <div style="margin: 0 3%; display: flex; align-items: center; flex-direction: column;">
-          <img src="./assets/img/FB.png">
-          <p>Aurora Santeria</p>
+    <section id="comprar" class="pt-section">
+      <div class="container text-sm-center d-flex justify-content-center align-items-center">
+        <div class="col-xxl-10">
+          <h1 class="text-center">Cómo comprar</h1>
+          <div class="row d-flex justify-content-center mt-5 flex-sm-nowrap">
+            <div class="col-sm-4 col-lg-3 row">
+              <div class="col-3 col-sm-12 d-flex justify-content-center align-items-center">
+                <img class="img-fluid" src="./assets/img/Lupa.png">
+              </div>
+              <div class="col-9 col-sm-12 mt-sm-1 px-0">
+                <p class="m-0" style="font-weight: 700;">
+                  Buscá
+                </p>
+                <p class="m-0 mt-2 mb-3 mb-sm-0">
+                  Explora entre las variedades
+                  de nuestros productos.
+                </p>
+              </div>
+            </div>
+
+            <hr class="hr-comprar col-6 ms-2 d-sm-none">
+            <div class="vr d-none d-sm-block"></div>
+
+            <div class="col-sm-4 col-lg-3 row">
+              <div class="col-3 col-sm-12 d-flex justify-content-center align-items-center">
+                <img class="img-fluid" src="./assets/img/dedo.png">
+              </div>
+              <div class="col-9 col-sm-12 mt-sm-1 px-0">
+                <p class="m-0" style="font-weight: 700;">
+                  Elegí
+                </p>
+                <p class="m-0 mt-2 mb-3 mb-sm-0">
+                  Encuentra el regalo perfecto para esa persona o el producto que estabas buscando.
+                </p>
+              </div>
+            </div>
+
+            <hr class="hr-comprar col-6 ms-2 d-sm-none">
+            <div class="vr d-none d-sm-block"></div>
+
+            <div class="col-sm-4 col-lg-3 row">
+              <div class="col-3 col-sm-12 d-flex justify-content-center align-items-center">
+                <img class="img-fluid" src="./assets/img/cel.png">
+              </div>
+              <div class="col-9 col-sm-12 mt-sm-1 px-0">
+                <p class="m-0" style="font-weight: 700;">
+                  Contáctanos
+                </p>
+                <p class="m-0 mt-2 mb-3 mb-sm-0">
+                  Mandanos
+                  un mensaje para
+                  coordinar la compra.
+                </p>
+              </div>
+            </div>
+
+            <hr class="hr-comprar col-6 ms-2 d-sm-none">
+          </div>
+  
+          <div class="col-md-10 col-lg-7 pe-sm-3 m-auto d-flex flex-wrap justify-content-evenly align-items-center mt-4">
+            <div class="text-center mx-3 mx-sm-0">
+              <img src="./assets/img/Whatsapp.png">
+              <p>+54 9 341 4825873</p>
+            </div>
+            <div class="text-center mx-3 mx-sm-0">
+              <img src="./assets/img/Insta.png">
+              <p>@aurorasanteria</p>
+            </div>
+            <div class="text-center mx-3 mx-sm-0">
+              <img src="./assets/img/FB.png">
+              <p>Aurora Santeria</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <!-- Section Mapa -->
-    <section id="ubicacion" class="container">
+    <section id="ubicacion" class="container pt-section">
       <div class="row">
         <img src="" alt="">
         <div class="col-5 offset-2">
@@ -606,9 +639,9 @@
       </div>
     </section>
   </main>
-  <footer style="background-color: #A4CE90; margin: 5% 0 0 0;">
-    <div class="text-center" style="padding: 23px 0;">
-      <p style="font-size: 16px;" class="text-white m-0">AURORASANTERIA.COM</p>
+  <footer>
+    <div class="text-center py-4">
+      <p class="text-white">AURORASANTERIA.COM</p>
     </div>
   </footer>
   <!-- Bootstrap JS -->
