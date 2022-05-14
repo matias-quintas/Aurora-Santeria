@@ -172,6 +172,13 @@ footer{
     opacity: 1;
     border-bottom: 2px solid #A4CE90;
 }
+.comoComprar__redes {
+    transition: 150ms ease-in;
+}
+.comoComprar__redes:hover {
+    background-color: #D4DFBD;
+    border-radius: 100%;
+}
 
 /* Section: mapa o ubicacion  */
 .ubicacion__bg{
