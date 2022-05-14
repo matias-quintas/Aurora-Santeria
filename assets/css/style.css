@@ -54,7 +54,21 @@ footer{
     background-color: #A4CE90;
     margin: 5% 0 0 0;
 }
-
+.flotante {
+    position: fixed;
+    width: 56px;
+    height: 56px;
+    bottom: 56px;
+    right: 8px;
+    background-color: #A4CE90;
+    border-radius: 50px;
+    box-shadow: 2px 2px 3px black;
+    z-index: 6;
+    padding: 10px;
+}
+.flotante img{
+    width: 40px;
+}
 /* Header */
 .headerNav {
     background-color: #A4CE90;
@@ -79,6 +93,18 @@ footer{
     height: 73vh;
     background-size: cover;
     background-position: center;
+}
+
+/* Section: Quienes Somos  */
+.quienesSomos__bg{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height:100%;
+    background-repeat:no-repeat;
+    background-image: url(../img/bg-quienes-somos.png);
+    background-position: left top;
+    top: -100px;
 }
 
 /* Section: Productos */
@@ -111,7 +137,7 @@ footer{
 }
 .products__background{
     position: absolute;
-    z-index: 0;
+    z-index: -1;
     width: 100%;
     height:100%;
     background-size: 25%;
@@ -134,7 +160,44 @@ footer{
     max-width: 70vh;
     border-radius: 8px;
 }
+
+/* Section: Como comprar  */
+.comoComprar__bg{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height:100%;
+    background-size: 100%;
+    background-repeat:no-repeat;
+    background-image: url(../img/bg-comoComprar.png);
+    background-position: center;
+}
+
+/* Section: mapa o ubicacion  */
+.ubicacion__bg{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height:100%;
+    background-repeat:no-repeat;
+    background-image: url(../img/bg-ubicacion.png);
+    background-position: left top;
+    left: 68px;
+    top: -68px;
+}
+
+
+/* MEDIA QUERIES */
 @media (max-width: 575px){
+    .navbar-nav{
+        background-color: #D4DFBD;
+        width:60%;
+        box-shadow: -2px 3px 6px rgba(0, 0, 0, 0.25);
+        margin-top: 2.5px;
+    }
+    .headerNav{
+        max-height: 72px;
+    }
     .products__group--1{
         margin-top: 0;
     }
@@ -169,6 +232,14 @@ footer{
         border-radius: 8px;
         padding: 7px;
     }
+    .pt-section{
+        padding-top: 70px;
+    }
+    .ubicacion__bg{
+        background-position: right center;
+        left: -40px;
+        top:0;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 991px){
@@ -186,10 +257,12 @@ footer{
         font-size: 1.125rem;
         line-height: 1.25rem;
     }
+    .ubicacion__bg{
+        left: 0;
+    }
 }
 
 @media (min-width: 992px){
-    /* Esta clase deberia cambiarse a "m-page" o algo similar, y usarla en todas las section... */
     .m-page{
         margin: 0 5.55%;
     }

@@ -14,6 +14,6 @@ btnMas.addEventListener("click", ()=>{
         });
         btnMas.textContent = "VER MÁS";
         btnState = true;
-        document.querySelector(".products").scrollIntoView();
+        document.querySelector("#products").scrollIntoView();
     }
 });
