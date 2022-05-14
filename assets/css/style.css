@@ -79,6 +79,10 @@ footer{
 .btn--hero {
     width: 365px;
     background-color: #E1BAAE;
+    transition: 150ms ease;
+}
+.btn--hero:hover {
+    background-color: #E29E88;
 }
 .btn--hero > img{
     width: 2.25rem;
